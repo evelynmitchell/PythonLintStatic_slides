@@ -23,6 +23,9 @@ Code Quality
 Security
 
 Type checking
+ 
+
+----
 
 ## **Dynamic Analysis**
 
@@ -34,13 +37,14 @@ Integration tests.
 
 We will not be discussing dynamic analysis. It is a big topic.
 
+----
 ## **Static Analysis Tools - Formatting**
 
 Note all these tools were suggested by copilot.
 
 
 
-
+----
 
 ### **black**
 
@@ -57,8 +61,10 @@ There is a link from the page above to an online app for trying it out.
 
 [demo - link is ephemeral](https://black.vercel.app/?version=stable&state=_Td6WFoAAATm1rRGAgAhARYAAAB0L-Wj4ARsAnNdAD2IimZxl1N_WlkPinBFoXIfdFTaTVkGVeHShArYj9yPlDvwBA7LhGo8BvRQqDilPtgsfdKl-ha7EFp0Ma6lY_06IceKiVsJ3BpoICJM9wU1VJLD7l3qd5xTmo78LqThf9uibGWcWCD16LBOn0JK8rhhx_Gf2ClySDJtvm7zQJ1Z-Ipmv9D7I_zhjztfi2UTVsJp7917XToHBm2EoNZqyE8homtGskFIiif5EZthHQvvOj8S2gJx8_t_UpWp1ScpIsD_Xq83LX-B956I_EBIeNoGwZZPFC5zAIoMeiaC1jU-sdOHVucLJM_x-jkzMvK8Utdfvp9MMvKyTfb_BZoe0-FAc2ZVlXEpwYgJVAGdCXv3lQT4bpTXyBwDrDVrUeJDivSSwOvT8tlnuMrXoD1Sk2NZB5SHyNmZsfyAEqLALbUnhkX8hbt5U2yNQRDf1LQhuUIOii6k6H9wnDNRnBiQHUfzKfW1CLiThnuVFjlCxQhJ60u67n3EK38XxHkQdOocJXpBNO51E4-f9z2hj0EDTu_ScuqOiC9cI8qJ4grSZIOnnQLv9WPvmCzx5zib3JacesIxMVvZNQiljq_gL7udm1yeXQjENOrBWbfBEkv1P4izWeAysoJgZUhtZFwKFdoCGt2TXe3xQ-wVZFS5KoMPhGFDZGPKzpK15caQOnWobOHLKaL8eFA-qI44qZrMQ7sSLn04bYeenNR2Vxz7hvK0lJhkgKrpVfUnZrtF-e-ubeeUCThWus4jZbKlFBe2Kroz90Elij_UZBMFCcFo0CfIx5mGlrINrTJLhERszRMMDd39XsBDzpZIYV4TcG7HoMS_IF8aMAAAxI-5uTWXbUQAAY8F7QgAAP01Vc6xxGf7AgAAAAAEWVo=)
 
-
+----
 ## **Static Analysis Tools - Code Quality**
+
+----
 
 ### **pylint**
 
@@ -70,6 +76,7 @@ Rules are configurable, so you can turn off the ones you don't like, or add your
 
 "Pylint analyses your code without actually running it. It checks for errors, enforces a coding standard, looks for code smells, and can make suggestions about how the code could be refactored. Pylint can infer actual values from your code using its internal code representation (astroid). If your code is import logging as argparse, Pylint will know that argparse.error(...) is in fact a logging call and not an argparse call."
 
+----
 ### **flake8**
 
 A wrapper around a bunch of other tools.
@@ -79,7 +86,7 @@ A wrapper around a bunch of other tools.
 ```
 F401 module imported but unused
 ```
-
+----
 ### **isort**
 
 A tool to sort imports.
@@ -92,6 +99,7 @@ A messy set of imports can make it hard to see what is being used.
 
 It especially makes it hard to see if you've missed or duplicated an import.
 
+----
 
 ### **pydocstyle**
 
@@ -104,6 +112,7 @@ D100 	Missing docstring in public module
 
 D101 	Missing docstring in public class
 ```
+----
 
 ### **pycodestyle**
 
@@ -112,6 +121,7 @@ D101 	Missing docstring in public class
 ```
 W391 	blank line at end of file
 ```
+----
 
 ### **pyflakes**
 
@@ -121,6 +131,8 @@ Pick this for speed, not thoroughness.
 
 [pyflakes docs](https://pypi.org/project/pyflakes/)
 
+----
+
 ### **pyroma**
 
 Note: I had never heard of this one before copilot suggested it.
@@ -128,6 +140,8 @@ Note: I had never heard of this one before copilot suggested it.
 This tool checks that your package is ready to be uploaded to PyPI.
 
 [pyroma docs](https://pypi.org/project/pyroma/)
+
+----
 
 ### **vulture**
 
@@ -137,7 +151,11 @@ Finds unused code.
 
 Note: I also hadn't head of this one before copilot suggested it.
 
+----
+
 ## **Static Analysis Tools - Security**
+
+----
 
 ### **bandit**
 
@@ -149,6 +167,8 @@ This looks like more of a framework than a complete solution. You still need to 
 
 The documentation is worth reading to learn more about Python security.
 
+----
+
 ### **safety**
 
 Another security issue checker for Python.
@@ -159,7 +179,9 @@ Another security issue checker for Python.
 
 [Safety DB](https://github.com/pyupio/safety-db)
 
+----
 ## **Static Analysis Tools - Type Checking**
+----
 
 ### **mypy**
 
@@ -171,6 +193,7 @@ What is type checking?
 
 It's a way of checking that the types of variables are what you expect them to be.
 
+----
 #### mypy examples
 
 ```python
@@ -195,6 +218,8 @@ def add(a: int, b: int) -> int:
 
 [type hints cheat sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
 
+----
+
 ### **pyre**
 
 Fast type checking for Python.
@@ -203,6 +228,7 @@ Fast type checking for Python.
 
 "Follows the typing standards introduced in PEPs [484 - Type Hints](https://peps.python.org/pep-0484/), [526 - Syntax for Variable Annotations](https://peps.python.org/pep-0526/), [612 - Parameter Specification Variables](https://peps.python.org/pep-0612/), and is being actively developed and constantly improved."
 
+----
 
 ### **pytype**
 
@@ -212,6 +238,8 @@ Inference based type checker for Python.
 
 "Pytype is a static type analyzer for Python code. It infers types for your code, finds bugs, and understands Python’s runtime behavior."
 
+----
+
 ### **pyright**
 
 Static type checker for Python from Microsoft.
@@ -219,6 +247,8 @@ Static type checker for Python from Microsoft.
 Designed for speed.
 
 [pyright code](https://github.com/microsoft/pyright)
+
+----
 
 # **Marp**
 
