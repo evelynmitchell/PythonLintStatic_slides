@@ -8,13 +8,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 
 --
 
-![bg left:40% 80%](https://marp.app/assets/marp.svg)
 
-# **Marp**
-
-Markdown Presentation Ecosystem
-
-https://marp.app/
 
 # **Python Code Quality**
 
@@ -222,3 +216,8 @@ Designed for speed.
 
 [pyright code](https://github.com/microsoft/pyright)
 
+# **Marp**
+
+Markdown Presentation Ecosystem
+
+https://marp.app/
