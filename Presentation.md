@@ -119,7 +119,7 @@ W391 	blank line at end of file
 
 The simplest static analysis tool for Python.
 
-Pick this for speed, not thoroughqness.
+Pick this for speed, not thoroughness.
 
 [pyflakes docs](https://pypi.org/project/pyflakes/)
 
