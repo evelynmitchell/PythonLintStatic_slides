@@ -140,7 +140,7 @@ Finds unused code.
 Note: I also hadn't head of this one before copilot suggested it.
 
 ## **Static Analysis Tools - Security**
-https://github.com/microsoft/pyright
+
 ### **bandit**
 
 Security issue checker for Python.
