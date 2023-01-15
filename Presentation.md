@@ -6,7 +6,7 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
---
+---
 
 
 
@@ -247,6 +247,14 @@ Static type checker for Python from Microsoft.
 Designed for speed.
 
 [pyright code](https://github.com/microsoft/pyright)
+
+----
+
+# **Further reading**
+
+Blog post by Al Sweigert
+
+[comparing tools](https://inventwithpython.com/blog/2022/11/19/python-linter-comparison-2022-pylint-vs-pyflakes-vs-flake8-vs-autopep8-vs-bandit-vs-prospector-vs-pylama-vs-pyroma-vs-black-vs-mypy-vs-radon-vs-mccabe/)
 
 ----
 
