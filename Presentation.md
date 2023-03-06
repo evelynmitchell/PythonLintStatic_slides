@@ -90,6 +90,13 @@ in your repository. Then every time you push or pull, a copy of the code will be
 
 ----
 
+### **ruff**
+
+A fast Python linter written in Rust.
+
+[ruff](https://github.com/charliermarsh/ruff)
+[ruff website](https://beta.ruff.rs/docs/)
+
 ### **pylint**
 
 A sophisticated static analysis tool for Python. 
